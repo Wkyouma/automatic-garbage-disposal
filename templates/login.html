@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+		<link rel="stylesheet" href="static/css/main.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="login">
+				<h2 class="separator">LOGIN</h2>
+				<form>
+					<div class="textfield"><input type="text" name="user" placeholder="Usuário" /></div>
+					<div class="textfield"><input type="password" name="senha" placeholder="Senha" /></div>
+					<button class="btn" type="button" hx-trigger="click" hx-post="/login" hx-target="#resposta-post">Enviar</button>
+					<a href="{{url_for('paginas.cadastrar_usuario')}}">register page</a>
+				</form>
+				<div class="repost" id="resposta-post"></div>
+				<div class="column is-4 is-offset-4">
+					{% with messages = get_flashed_messages()%}
+					{% if messages %}
+					<p></p>
+					<p class="whiteText">{{messages[0]}}</p>
+					<p></p>
+					{% endif%}
+					{%endwith%}
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

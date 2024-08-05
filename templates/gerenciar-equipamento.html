@@ -1,0 +1,29 @@
+
+    {% extends "base-nav.html" %}
+
+{% block content %}
+<div class="box">
+    <div id="resposta-post"></div>
+    <h2 class="separator">Cadastrar Sensor</h2>
+    <form>
+        <input type="text" name="sensor" placeholder="Sensor">
+        <input type="text" name="valor" placeholder="Valor">
+        <button type="button" hx-trigger="click" hx-post="/gerenciar-sensor" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Remover Sensor</h2>
+    <form>
+        <input type="text" name="sensor" placeholder="Sensor">
+        <button type="button" hx-trigger="click" hx-delete="/gerenciar-sensor" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Cadastrar Atuador</h2>
+    <form>
+        <input type="text" name="atuador" placeholder="Atuador">
+        <button type="button" hx-trigger="click" hx-post="/gerenciar-atuador" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Remover Atuador</h2>
+    <form>
+        <input type="text" name="atuador" placeholder="Atuador">
+        <button type="button" hx-trigger="click" hx-delete="/gerenciar-atuador" hx-target="#resposta-post">Enviar</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+
+        {% extends "base-nav.html" %}
+
+{% block content %}
+    <div class="box">
+    <div id="resposta-post"></div>
+    <h2 class="separator">Registrar Usuário</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="senha" placeholder="Senha">
+        <button type="button" hx-trigger="click" hx-post="/gerenciar-usuarios" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Editar Usuário</h2>
+    <form>
+        <input type="text" name="nome-antigo" placeholder="Nome Antigo">
+        <input type="text" name="nome-novo" placeholder="Nome Novo">
+        <input type="text" name="senha-nova" placeholder="Senha Nova">
+        <button type="button" hx-trigger="click" hx-patch="/gerenciar-usuarios" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Remover Usuário</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Nome">
+        <button type="button" hx-trigger="click" hx-delete="/gerenciar-usuarios" hx-target="#resposta-post">Enviar</button>
+    </form>
+    <h2 class="separator">Usuários</h2>
+{% if usuarios %}
+    <ul>
+        {% for usuario in usuarios %}
+            <li>Usuário: {{ usuario.username }}; Senha: {{ usuario.password }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>Sem usuários</h3>
+{% endif %}
+</div>
+    
+{% endblock %}
+

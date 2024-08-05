@@ -1,0 +1,28 @@
+{% extends "base-nav.html" %}    
+
+{% block content %}
+<div class="box">
+    <h2 class="separator">Sensores:</h2>
+    {% if sensores|length > 0 %}
+        <h2>Sensores</h2>
+        <ul>
+            {% for k, v in sensores.items() %}
+                <li>Sensor: {{ k }}; Valor: {{ v }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>Sem sensores</h3>
+    {% endif %}
+    <h2 class="separator">Atuadores:</h2>
+    {% if atuadores|length > 0 %}
+        <h2>Atuadores</h2>
+        <ul>
+            {% for v in atuadores %}
+                <li>Atuador: {{ v }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>Sem atuadores</h3>
+    {% endif %}
+</div>
+{% endblock %}

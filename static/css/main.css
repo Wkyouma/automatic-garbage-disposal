@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-family: "Inter", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  background-color: #201d25;
+  color: #c3cbd6;
+}
+
+h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5333333333);
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #c3cbd6;
+  font-weight: 800;
+  margin: 10px 10px 0 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input[type=text],
+input[type=password] {
+  background-color: #514869;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #514869;
+  color: #c3cbd6;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.337254902);
+  transition: all 0.15s ease;
+}
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.3333333333);
+}
+input[type=text]:hover,
+input[type=password]:hover {
+  background-color: rgba(71, 67, 82, 0.5254901961);
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: rgba(71, 67, 82, 0.5254901961);
+  outline: 1px solid #00ff88;
+}
+
+button {
+  transition: all 0.2s ease;
+  width: 50%;
+  padding: 12px 0px;
+  margin-top: 30px;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #00ff88;
+  background-color: #514869;
+  border: 1px solid #00ff88;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.337254902);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00ff88;
+  color: #2b134b;
+  box-shadow: 0px 5px 20px #00ff88;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201d25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .login {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 100px 1fr;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  background-color: #3a3152;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3333333333);
+  border: 5px solid #514869;
+  overflow: hidden;
+}
+.main .login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .login .textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+}
+
+.nav_ {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+  background-color: #3a3152;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3333333333);
+}
+.nav_ .lie {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  transition: all 0.2s ease;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+}
+.nav_ .lie:hover {
+  transform: scale(1.1);
+  background-color: #00ff88;
+  box-shadow: 0px 0px 20px #00ff88;
+  font-weight: 800;
+  color: #2b134b;
+}
+.nav_ .lie a {
+  text-decoration: none;
+}
+.nav_ .lie a:link {
+  color: inherit;
+}
+.nav_ .lie a:visited {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 30px;
+  margin: 100px 0 30px 0;
+  width: 40%;
+  min-width: 450px;
+  gap: 20px;
+  background-color: #3a3152;
+  border: 5px solid #514869;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3333333333);
+  overflow: hidden;
+}
+.container .lixo-tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator {
+  --b: 2px;
+  --w: 1000px;
+  --g: 10px;
+  width: fit-content;
+  padding: 0 0.2em;
+  line-height: 1.6em;
+  color: #00ff88;
+  font-size: 2.3rem;
+  border-image: linear-gradient(rgba(0, 0, 0, 0) calc(50% - var(--b) / 2), #00ff88 0 calc(50% + var(--b) / 2), rgba(0, 0, 0, 0) 0) 1/0 var(--w)/calc(var(--w) + var(--g));
+  margin-inline: auto;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5333333333);
+}
+
+/*# sourceMappingURL=main.css.map */

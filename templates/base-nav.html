@@ -1,0 +1,33 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="nav_">
+            <li class="lie">
+                <a href="/gerenciar-equipamento">Gerenciar equipamento</a>
+            </li>
+            <li class="lie">
+                <a href="/gerenciar-usuarios">Gerenciar usuarios</a>
+            </li >
+            <li class="lie">
+                <a href="/lixo">Dados em tempo real</a>
+            </li>
+            <li class="lie">
+                <a href="/equipamento">Equipamento</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
+<style>
+</style>

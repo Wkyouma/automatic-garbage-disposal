@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+input[type=text],
+input[type=password] {
+  background-color: #514869;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #514869;
+  color: #c3cbd6;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.337254902);
+  transition: all 0.15s ease;
+}
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.3333333333);
+}
+input[type=text]:hover,
+input[type=password]:hover {
+  background-color: rgba(71, 67, 82, 0.5254901961);
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: rgba(71, 67, 82, 0.5254901961);
+  outline: 1px solid #00ff88;
+}
+
+button {
+  transition: all 0.2s ease;
+  width: 400px;
+  padding: 16px 0px;
+  margin-top: 51px;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #00ff88;
+  background-color: #514869;
+  border: 1px solid #00ff88;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.337254902);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00ff88;
+  color: #2b134b;
+  box-shadow: 0px 5px 30px #00ff88;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201d25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .login {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 100px 1fr;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+  background-color: #3a3152;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337254902);
+}
+.main .login div {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5333333333);
+  font-size: 2.5rem;
+}
+.main .login .textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=login.css.map */

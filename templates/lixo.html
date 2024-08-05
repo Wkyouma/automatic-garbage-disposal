@@ -1,0 +1,15 @@
+
+    {% extends "base-nav.html" %}
+
+    {% block content %}
+    <div class="box">
+        <div class="lixo-tr">
+            <h2 class="separator"class="separator">Dados em tempo real:</h2>
+            <ul hx-get="/dados-tempo-real" hx-trigger="load, every 2s"></ul>
+            <button type="button" hx-get="/comando" hx-trigger="click" hx-target="#resposta-comando">Retirar Lixo</button>
+            <div id="resposta-comando"></div>
+        </div>
+    </div>
+    
+    {% endblock %}
+
