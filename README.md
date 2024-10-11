@@ -1,4 +1,4 @@
-**Sistema de Gerenciamento e Monitoramento de Lixeiras Inteligentes
+-**Sistema de Gerenciamento e Monitoramento de Lixeiras Inteligentes
 Este projeto é uma aplicação web que utiliza tecnologias de IoT para gerenciar lixeiras inteligentes, permitindo o monitoramento em tempo real de dados como nível de preenchimento e temperatura. O sistema visa aumentar a eficiência da coleta de resíduos e promover a sustentabilidade.
 
 **Funcionalidades
