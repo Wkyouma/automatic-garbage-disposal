@@ -11,10 +11,10 @@ Detecção de incêndios nas lixeiras.
 Interface web responsiva para operadores.
 
 **Tecnologias Utilizadas**
-Flask: Framework web para Python.
-SQLAlchemy: ORM utilizado para manipulação do banco de dados.
-Flask-SQLAlchemy: Extensão para Flask que adiciona suporte ao SQLAlchemy.
-Flask-Login: Gerenciamento de login e controle de acesso de usuários.
-Flask-MQTT: Integração com o protocolo MQTT para comunicação com os sensores IoT.
-HTMX: Framework front-end para manipulação de requisições HTTP dinâmicas.
-SCSS: Utilizado para estilização modular e responsiva.
+-Flask: Framework web para Python.
+-SQLAlchemy: ORM utilizado para manipulação do banco de dados.
+-Flask-SQLAlchemy: Extensão para Flask que adiciona suporte ao SQLAlchemy.
+-Flask-Login: Gerenciamento de login e controle de acesso de usuários.
+-Flask-MQTT: Integração com o protocolo MQTT para comunicação com os sensores IoT.
+-HTMX: Framework front-end para manipulação de requisições HTTP dinâmicas.
+-SCSS: Utilizado para estilização modular e responsiva.
