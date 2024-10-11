@@ -9,6 +9,7 @@ Visualização do histórico de dados das lixeiras.
 Detecção de lixeiras cheias e sugestão de rotas de coleta otimizadas.
 Detecção de incêndios nas lixeiras.
 Interface web responsiva para operadores.
+
 **Tecnologias Utilizadas**
 Flask: Framework web para Python.
 SQLAlchemy: ORM utilizado para manipulação do banco de dados.
